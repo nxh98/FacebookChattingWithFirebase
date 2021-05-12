@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChatViewController" customModule="FinalProject" customModuleProvider="target">
+            <connections>
+                <outlet property="attachButton" destination="DxY-NE-n4m" id="JZL-pn-2hm"/>
+                <outlet property="sendButton" destination="MfK-vH-rwn" id="H3T-N2-5nU"/>
+                <outlet property="tableView" destination="1gr-jS-82F" id="pbD-Ub-n8w"/>
+                <outlet property="textInput" destination="8C1-7v-WRX" id="vtz-u0-kQz"/>
+                <outlet property="view" destination="iN0-l3-epB" id="qwK-lh-Z5i"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="28J-E1-Lx4">
+                    <rect key="frame" x="20" y="109" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WVI-QC-w1h">
+                    <rect key="frame" x="20" y="49" width="40" height="40"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="WVI-QC-w1h" secondAttribute="height" id="B70-tY-sqU"/>
+                        <constraint firstAttribute="height" constant="40" id="RGt-kS-Lqn"/>
+                    </constraints>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" image="arrow.left" catalog="system"/>
+                </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="1gr-jS-82F">
+                    <rect key="frame" x="0.0" y="140" width="414" height="662"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fo1-QH-UFK">
+                    <rect key="frame" x="0.0" y="802" width="414" height="60"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DxY-NE-n4m">
+                            <rect key="frame" x="10" y="10" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="DxY-NE-n4m" secondAttribute="height" id="OV8-zM-vec"/>
+                                <constraint firstAttribute="height" constant="40" id="oN9-fE-0Qk"/>
+                            </constraints>
+                            <state key="normal" image="icons8-attach-50"/>
+                        </button>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8C1-7v-WRX">
+                            <rect key="frame" x="60" y="5" width="334" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="dpM-bB-KUw"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="5q2-Vm-Sdw"/>
+                        <constraint firstItem="DxY-NE-n4m" firstAttribute="leading" secondItem="Fo1-QH-UFK" secondAttribute="leading" constant="10" id="8yj-zt-MgE"/>
+                        <constraint firstAttribute="trailing" secondItem="8C1-7v-WRX" secondAttribute="trailing" constant="20" id="LI9-LZ-dks"/>
+                        <constraint firstItem="8C1-7v-WRX" firstAttribute="centerY" secondItem="Fo1-QH-UFK" secondAttribute="centerY" id="Oeg-dW-Qi5"/>
+                        <constraint firstItem="DxY-NE-n4m" firstAttribute="centerY" secondItem="Fo1-QH-UFK" secondAttribute="centerY" id="VJD-yE-nSx"/>
+                        <constraint firstItem="8C1-7v-WRX" firstAttribute="leading" secondItem="DxY-NE-n4m" secondAttribute="trailing" constant="10" id="q8M-fW-NlX"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MfK-vH-rwn">
+                    <rect key="frame" x="344" y="812" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="A4b-p0-sQd"/>
+                        <constraint firstAttribute="width" secondItem="MfK-vH-rwn" secondAttribute="height" multiplier="1:1" id="hzt-yz-ppA"/>
+                    </constraints>
+                    <state key="normal" image="send"/>
+                    <connections>
+                        <action selector="sendButtonTouchUpInside:" destination="-1" eventType="touchUpInside" id="fmw-Xa-ehy"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Fo1-QH-UFK" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="0eM-Gr-S85"/>
+                <constraint firstItem="1gr-jS-82F" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="2eF-F0-T0n"/>
+                <constraint firstItem="Fo1-QH-UFK" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="4Wb-bV-5cN"/>
+                <constraint firstItem="MfK-vH-rwn" firstAttribute="centerY" secondItem="8C1-7v-WRX" secondAttribute="centerY" id="4m4-6b-pmX"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="1gr-jS-82F" secondAttribute="trailing" id="6Xq-d1-f7d"/>
+                <constraint firstItem="1gr-jS-82F" firstAttribute="top" secondItem="28J-E1-Lx4" secondAttribute="bottom" constant="10" id="HQ2-p4-1hw"/>
+                <constraint firstItem="WVI-QC-w1h" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="5" id="NqK-9m-8Oh"/>
+                <constraint firstItem="28J-E1-Lx4" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="UjA-Y2-prA"/>
+                <constraint firstItem="28J-E1-Lx4" firstAttribute="top" secondItem="WVI-QC-w1h" secondAttribute="bottom" constant="20" id="Zqu-rx-i0e"/>
+                <constraint firstItem="MfK-vH-rwn" firstAttribute="trailing" secondItem="8C1-7v-WRX" secondAttribute="trailing" constant="-10" id="bLl-SG-f92"/>
+                <constraint firstItem="Fo1-QH-UFK" firstAttribute="top" secondItem="1gr-jS-82F" secondAttribute="bottom" id="bUE-d6-Ssf"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Fo1-QH-UFK" secondAttribute="trailing" id="cDh-lu-vVS"/>
+                <constraint firstItem="WVI-QC-w1h" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="qls-Cx-soc"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="263.768115942029" y="152.67857142857142"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="arrow.left" catalog="system" width="128" height="98"/>
+        <image name="icons8-attach-50" width="25" height="25"/>
+        <image name="send" width="256" height="256"/>
+    </resources>
+</document>
